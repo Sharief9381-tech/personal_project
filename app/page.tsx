@@ -6,15 +6,10 @@ import { HowItWorks } from "@/components/landing/how-it-works"
 import { Platforms } from "@/components/landing/platforms"
 import { CTA } from "@/components/landing/cta"
 import { Footer } from "@/components/landing/footer"
-import { DashboardRedirect } from "@/components/dashboard-redirect"
-import { Suspense } from "react"
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-background">
-      <Suspense fallback={null}>
-        <DashboardRedirect />
-      </Suspense>
       <Header />
       <Hero />
       <Stats />
